@@ -10,8 +10,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #4F4557;
+    background-color: #674483;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
 }
 
 .divlogotitle{
@@ -47,6 +48,16 @@ body{
 
 .item {
     margin-right: 6rem;
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+
+.item:hover{
+    background-color: #4d3466;
+}
+
+.item:active{
+    transform: scale(0.97);
 }
 
 .palabra1{
@@ -110,16 +121,89 @@ body{
 }
 
 .boton{
+  color: #F4EEE0;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button{
     position: absolute;
-    top: 45%;
+    top: 42%;
     left: 1%;
-    background-color: rgb(85, 78, 78);
+    background-color: #4F4557;
     padding: 10px 30px;
     border: none;
-    color: white;
+    color: #F4EEE0;
     text-decoration: none;
+    cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1.5em;
+    transition: all 0.2 ease;
+    overflow: hidden;
+}
+
+button:active{
+    transform: scale(0.96);
+}
+
+button:hover{
+    color: #fff;
+}
+
+button span{
+    position: absolute;
+    background: #07c0ee;
+    transition: .5s;
+}
+
+button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1){
+    left: 0;
+}
+
+button:hover span:nth-child(2){
+    right: 0;
+}
+
+button:hover span:nth-child(3){
+    bottom: 0;
+}
+
+button:hover span:nth-child(4){
+    top: 0;
 }
 
 .dropdown {
@@ -139,8 +223,8 @@ body{
     display: none;
     position: absolute;
     top: 100%;
-    left: -30px;
-    background-color: transparent;
+    left: -17px;
+    background-color: #4F4557;
     width: 100px;
     border: 1px solid #ccc;
     padding: 0;
@@ -158,6 +242,7 @@ body{
     text-align: center;
     border-bottom: 1px solid #ccc;
     transition: background-color 0.3s ease;
+    color: #F4EEE0;
 }
 
 .dropdown-item:last-child {
@@ -165,13 +250,11 @@ body{
 }
 
 .dropdown-item:hover {
-    background-color: #e0e0e0;
+    background-color: #8965ac;
+    color: aquamarine;
 }
 
-@media (min-width: 500px) {
-    * {
-    }
-}
+
 
 
 
